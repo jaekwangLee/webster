@@ -1,0 +1,22 @@
+{
+    "name": "webster",
+    "version": "0.0.1",
+    "description": "websterking's blog",
+    "main": "index.js",
+    "author": "",
+    "license": "ISC",
+
+    "scripts": {
+        "client": "cd client && npm start",
+        "server": "node server.js",
+        "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+    },
+
+    "dependencies": {
+        "express": "^4.16.3"
+    },
+
+    "devDependencies": {
+        "concurrently": "^3.5.1"
+    }
+}
